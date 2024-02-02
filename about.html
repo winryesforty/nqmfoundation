@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>NQM Foundation</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body{
+        padding-bottom: 0!important;
+        padding-right: 0!important;
+        margin-right:0!important;
+
+        background-image: url('images/8035401.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      .navbar{
+        border-bottom: 1px solid lightgray;
+      }
+
+    .carousel-item:nth-child(1) {
+      background-image: url('images/MicrosoftTeams-image (19).png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .carousel-item:nth-child(2) {
+      background-image: url('images/MicrosoftTeams-image (14).png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .carousel-item:nth-child(3) {
+      background-image: url('images/MicrosoftTeams-image (17).png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .nav-link.active{
+      border-bottom: 1px solid lightgray;
+    }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      @media (max-width: 480px) {
+        /* .navbar {
+          padding-bottom:15px!important;
+        } */
+      }
+      .navbar-collapse.collapse.show {
+          padding-bottom:20px!important;
+          /* navbar-collapse collapse show */
+      }
+
+      .vission{
+        background-color: #163d24;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        /* margin-right: 0; */
+        padding: 40px 10%;
+        display: flex;
+      }
+      .mission{
+        background-color: #34537c;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        /* margin-right: 0; */
+        padding: 40px 10%;
+        display: flex;
+      }
+      .about-paragraph
+      {
+        width: 100%;
+        min-height: 100%;
+        color: black;
+        text-align: justify;
+        margin: auto;
+        padding-right: 50px;
+        font-size: 20px;
+        line-height: 27px;
+        display: block;
+      }
+      .footer{
+        text-align: center;
+        background-color: #383838;
+        border-top: 1px solid #dbdbdb;
+      }
+      .footer p
+      {
+        color: #9e9e9e;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+      .recent-activities .title{
+        color: #676770;
+        text-align: center;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 300;
+      }
+      .about-titles{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight:600;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white py-0">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/MicrosoftTeams-image (20).png" class="rounded float-start"
+          alt="..." width="190px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success text-white" style="background-color: #202054;" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container-fluid marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row featurette p-5 mission bg-white text-dark justify-content-evenly">
+      <div class="col-md-7">
+        <h2 class="about-titles">About NQM Foundation</h2>
+          <p class="lead about-paragraph">
+          Welcome to NQM Foundation, where compassion meets action. We are a non-profit organization dedicated to making a positive impact on the lives of those in need. Our journey began with a simple belief – that every person deserves access to basic necessities, education, and a chance at a better life.</p>
+          
+          <h3 class="about-titles mt-5">What Drives Us</h3>
+          <p class="lead about-paragraph">
+          Compassion is the driving force behind NQM Foundation. We believe in the inherent goodness of people and their
+          ability to make a difference. Whether it's providing essential resources during a crisis, supporting education programs,
+          or promoting healthcare initiatives, we are committed to being a beacon of hope in times of need.</p>
+
+          
+          <h3 class="about-titles mt-5">Our Approach</h3>
+          <ul class="about-paragraph">
+          <li> We work closely with local communities, respecting their unique cultures and understanding their
+          specific needs. This approach ensures that our efforts have a lasting and meaningful impact.</li>
+
+          <li>Transparency: NQM Foundation is committed to transparency in all our operations. We believe in being
+            accountable to
+          our donors, partners, and the communities we serve. Our financial records are open, and we provide regular updates on
+          the progress of our projects.</li>
+
+          <li>Sustainability: We believe in creating lasting change. Our programs are designed to be sustainable, addressing the
+            root
+          causes of issues and building a foundation for long-term success.</li>
+        </ul>
+
+          
+          <h3 class="about-titles mt-5">How You Can Help</h3>
+          <p class="lead about-paragraph">
+          Your support is crucial to our mission. Whether you choose to donate, volunteer, or spread awareness, every action makes a difference. Together, we can create a world where everyone has the opportunity to thrive.
+
+          Thank you for being a part of the NQM Foundation family. With your support, we can continue to make a positive
+          impact and bring about positive change.</p>
+      </div>
+      <div class="col-md-5 align-self-start" style="position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;">
+        <img src="images/GAFEB2024 (1).jpg" class="rounded float-start" alt="..." width="100%">
+      </div>
+    </div>
+
+
+  </div><!-- /.container -->
+
+  <footer class="container-fluid text-center footer" style="padding-top: 35px;
+  padding-bottom: 35px;">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2024 Copyright NQM Foundation &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>

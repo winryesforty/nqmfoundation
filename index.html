@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>NQM Foundation</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      /* body{
+      }  */
+
+      #myCarousel{
+      padding-top: 5%;
+      }
+      .carousel-indicators{
+      padding-bottom: 5%;
+      }
+      .carousel-item{
+        height:100%!important;
+      }
+      .carousel-inner{
+        height: 100vh;
+        padding-bottom: 5%;
+      }
+      body{
+        padding-bottom: 0!important;
+        padding-right: 0!important;
+        margin-right:0!important;
+        padding-top:0;
+
+        background-image: url('images/8035401.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      .navbar{
+        border-bottom: 1px solid lightgray;
+      }
+    .carousel-item:nth-child(1) {
+      background-image: url('images/MicrosoftTeams-image (19).png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .carousel-item:nth-child(2) {
+      background-image: url('images/MicrosoftTeams-image (14).png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .carousel-item:nth-child(3) {
+      background-image: url('images/MicrosoftTeams-image (17).png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .nav-link.active{
+      border-bottom: 1px solid lightgray;
+    }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      @media (max-width: 480px) {
+        /* .navbar {
+          padding-bottom:15px!important;
+        } */
+      }
+      .navbar-collapse.collapse.show {
+          padding-bottom:20px!important;
+          /* navbar-collapse collapse show */
+      }
+
+      .vission{
+        background-color: #163d24;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        /* margin-right: 0; */
+        padding: 40px 10%;
+        display: flex;
+      }
+      .mission{
+        background-color: #34537c;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        /* margin-right: 0; */
+        padding: 40px 10%;
+        display: flex;
+      }
+      .vission-paragraph{
+        color: #d3e2ef;
+        text-align: center;
+        margin: auto;
+        /* padding-left: 50px; */
+        font-size: 40px;
+        line-height: 47px;
+      }
+      .mission-paragraph
+      {
+        width: 100%;
+        min-height: 100%;
+        color: #fff;
+        text-align: center;
+        margin: auto;
+        padding-right: 50px;
+        font-size: 30px;
+        line-height: 47px;
+        display: block;
+      }
+      .footer{
+        text-align: center;
+        background-color: #383838;
+        border-top: 1px solid #dbdbdb;
+      }
+      .footer p
+      {
+        color: #9e9e9e;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+      .recent-activities .title{
+        color: #676770;
+        text-align: center;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 300;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white py-0">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/MicrosoftTeams-image (20).png" class="rounded float-start"
+          alt="..." width="190px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success text-white" style="background-color: #202054;" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>N - Nurturing</h1>
+            <p>Nurturing the knowledge and skills of every employee and business partner.</p>
+            <!-- <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> -->
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+
+        <div class="container">
+          <div class="carousel-caption text-dark">
+            <h1>Q - Quality.</h1>
+            <p>Establishing Quality standards in our processes to meet customers satisfaction.</p>
+            <!-- <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>M - Management</h1>
+            <p>Maintaining integrity and competitiveness in the management of our day-to-day business.</p>
+            <!-- <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container-fluid marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row text-center" style="height:500px;">
+      <div class="col-lg-12 p-5">
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+
+        <h2 class="bold-text" style="font-size: 50px;font-weight: bold;color: #676770;
+        text-align: center;
+        letter-spacing: 5px;
+        text-transform: uppercase;">NQM Life FOUNDATION</h2>
+        <p style="color: #8e8e9c;
+        text-align: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 300;">We uplift the lives of our community.</p>
+        <p><a class="btn btn-primary" href="#">Donate &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <!-- <hr class="featurette-divider"> -->
+
+    <div class="row featurette p-5 mission">
+      <div class="col-md-7">
+        <!-- <h2 class="featurette-heading text-white text-center">MISSION</h2> -->
+        <p class="lead mission-paragraph">We elevate the living condition of the community by providing educational scholarship, religious
+          charitable work and livelihood projects</p>
+      </div>
+      <div class="col-md-5">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img src="images/MicrosoftTeams-image (13).png" class="rounded float-start" alt="..." width="300">
+      </div>
+    </div>
+
+    <!-- <hr class="featurette-divider"> -->
+
+    <div class="row featurette vission">
+      <div class="col-md-7 order-md-2">
+        <!-- <h2 class="featurette-heading">VISSION</h2> -->
+        <p class="lead vission-paragraph">Uplifting the lives of our Kababayan</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img src="images/MicrosoftTeams-image (12).png" class="rounded float-start" alt="..." width="300">
+      </div>
+    </div>
+
+    <!-- /END THE FEATURETTES -->
+
+    <div class="row p-5 text-center bg-white clearfix">
+      <h1 class="pb-3 title">Recent Activities / Projects</h1>
+      
+      <div class="col-lg-8 mx-auto py-md-4" style='text-align: justify;'>
+        <img src="images/MicrosoftTeams-image (22).png" class="rounded float-end mb-3 ms-md-3" alt="..." width="400">
+        <h5 class="title">Reviving the spirit: A repainting project for the Parish of St. Francis of Assisi in Borongan, Municipality of Mercedes, Eastern Samar.</h5>
+        <p>
+          The repainting of the Parish of St. Francis of Assisi in Borongan, Eastern Samar presents an opportunity to rejuvenate and enhance the visual appeal of this historical place of worship. Renowned for its rich cultural heritage and architectural beauty, the parish holds significant religious importance for the community it serves.
+  The decision to undertake the repainting of the Parish of St. Francis of Assisi stems from the desire to restore and enhance the aesthetic appeal of this sacred space. The focus is on reviving the spirit of the parish and reigniting the spiritual atmosphere that is lovingly preserved.
+        </p>
+        <p>
+          As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+        </p>
+        <p>
+          And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+        </p>
+      </div><!-- /.row -->
+      <!-- <img src="images/MicrosoftTeams-image (22).png" class="rounded float-start" alt="..." width="200">
+      <p>
+        The repainting of the Parish of St. Francis of Assisi in Borongan, Eastern Samar presents an opportunity to rejuvenate and enhance the visual appeal of this historical place of worship. Renowned for its rich cultural heritage and architectural beauty, the parish holds significant religious importance for the community it serves.
+The decision to undertake the repainting of the Parish of St. Francis of Assisi stems from the desire to restore and enhance the aesthetic appeal of this sacred space. The focus is on reviving the spirit of the parish and reigniting the spiritual atmosphere that is lovingly preserved.
+      </p>
+      <p>
+        As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+      </p>
+      <p>
+        And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+      </p> -->
+
+      <div class="col-lg-8 mx-auto py-md-4" style='text-align: justify;'>
+        <img src="images/MicrosoftTeams-image (23).png" class="rounded float-start mb-3 me-md-3" alt="..." width="400">
+        <h5 class="title">Ensuring longevity: A repainting project for the Parish of St. Francis of Assisi Convent in Borongan,
+          Municipality of Mercedes, Eastern Samar.</h5>
+        <p>
+          The Parish of St. Francis of Assisi Convent in Borongan, Eastern Samar is due for a repainting project. Repainting the
+          Parish of St. Francis of Assisi Convent is not merely a cosmetic enhancement; it is an investment in the maintenance of
+          the building's structural integrity. By repainting the convent, the building can be protected from these harmful
+          elements, ensuring its longevity and continued use as an essential religious and cultural center.
+The repainting of the Parish of St. Francis of Assisi Convent in Borongan, Eastern Samar is a crucial endeavor to maintain the structural integrity and historical significance of the building. By undertaking this project with care, using appropriate materials and colors, and involving professionals in the field, the convent was beautifully restored, ensuring its continued use as a cherished landmark in the community.
+        </p>
+      </div>
+
+      <div class="col-lg-8 mx-auto py-md-4" style='text-align: justify;'>
+        <img src="images/MicrosoftTeams-image (24).png" class="rounded float-end mb-3 ms-md-3" alt="..." width="400">
+        <h5 class="title">Represents faith and commitment: The addition of belfry in the Parish of St. Francis of Assisi in Borongan, Municipality of Mercedes, Eastern Samar.</h5>
+        <p>
+          The Parish of St. Francis of Assisi - Mercedes, Eastern Samar was established on October 25, 1894 and located in the Municipality of Mercedes, Province of Eastern Samar. The church is dedicated to St. Francis of Assisi, the patron saint of animals and the environment. It serves as a spiritual center for the local Catholic community and offers various sacraments, religious services, and pastoral care.
+        </p>
+        <p>
+          The Parish of St. Francis of Assisi plays a vital role in the religious and cultural life of the people in the Eastern Samar region. It is a place of worship, gathering, and community engagement. The church provides a peaceful and serene environment where individuals can reflect, pray, and deepen their faith.
+        </p>
+        <p>
+          On November 11, 2023 a ceremonial groundbreaking for the addition of a belfry to the Parish of St. Francis of Assisi.
+          This signifies the growth and development of the church, as well as its deeper integration within the surrounding
+          community. This structure will not only enhance the visual appeal of the church but also serve its practical purposes.
+          People can take great joy in seeing their church adorned with this new addition, knowing that it represents their faith
+          and commitment to the community. It will serve as a visual testament to the dedication and hard work that went into
+          making the Parish of St. Francis of Assisi a spiritual and communal hub.
+        </p>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <!-- /.row -->
+
+  </div><!-- /.container -->
+
+  <!-- FOOTER -->
+  <footer class="container-fluid text-center footer" style="padding-top: 35px;
+  padding-bottom: 35px;">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2024 Copyright NQM Foundation &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
